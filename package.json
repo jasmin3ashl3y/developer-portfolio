@@ -1,0 +1,27 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "mongoose": "^6.2.3"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "build": "cd client && npm run build && cd ../server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmin3ashl3y/developer-portfolio.git"
+  },
+  "author": "jasmin3ashl3y",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasmin3ashl3y/developer-portfolio/issues"
+  },
+  "homepage": "https://github.com/jasmin3ashl3y/developer-portfolio#readme"
+}
